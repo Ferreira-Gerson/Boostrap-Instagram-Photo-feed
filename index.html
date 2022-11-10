@@ -6,80 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">  
 </head>
 <body>
   <!-- navbar top -->
-        <nav class="container-fluid d-inline p-2 bg-light">
-            <div class="">
-              <a class="navbar-brand" href="#">
-              <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram logo" width="24" height="24" class="d-inline-block align-text-top">
-              Instagram
-            </a>
-  <!--Module-->
-            <div class="d-flex justify-content-end">
-                <button type="button"
-                  class="btn btn-success" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#exampleModal" 
-                  data-bs-whatever="Add the capture of your post here"
-                  >
-                  Create a New Post
-                </button>
-              </div>
-              <div class="modal fade" 
-                id="exampleModal" 
-                tabindex="-1" 
-                aria-labelledby="exampleModalLabel" 
-                aria-hidden="true"
-                >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="mb-3">
-                          <label for="message-text" class="col-form-label">Caption:</label>
-                          <textarea 
-                            class="form-control" 
-                            id="message-text" 
-                            placeholder="Add the message of your caption here"
-                            >
-                          </textarea>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-success">Publish</button>
-                    </div>
+            <nav class=" container-fluid d-flex navbar navbar-expand-lg bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="Instagram logo" width="24" height="24" class="d-inline-block align-text-top">
+                    Instagram
+                  </a>
+                  <div class="d-flex justify-content-end">
+                                <!--Module-->
+                          <div class="d-flex justify-content-end">
+                            <button type="button"
+                                  class="btn btn-success" 
+                                  data-bs-toggle="modal" 
+                                  data-bs-target="#exampleModal" 
+                                  data-bs-whatever="Add the capture of your post here"
+                                  >
+                                  Create a New Post
+                                </button>
+                              </div>
+                              <div class="modal fade" 
+                                id="exampleModal" 
+                                tabindex="-1" 
+                                aria-labelledby="exampleModalLabel" 
+                                aria-hidden="true"
+                                >
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                        <div class="mb-3">
+                                          <label for="message-text" class="col-form-label">Caption:</label>
+                                          <textarea 
+                                            class="form-control" 
+                                            id="message-text" 
+                                            placeholder="Add the message of your caption here"
+                                            >
+                                          </textarea>
+                                        </div>
+                                      </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          <!-- Dropdown Button -->
+                          <div class="dropdown justify-content-end">
+                            <a class="btn btn-outline-secundary dropdown-toggle mx-3 rounded" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="material-symbols-outlined">
+                                settings
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Profile</a></li>
+                              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                              <li><a class="dropdown-item" href="#">Private and Data</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                    </nav>
                   </div>
-                </div>
-              </div>
-  <!-- Dropdown Button -->
-              <div class="dropdown d-inline-block justify-content-end">
-                <button 
-                  class="btn btn-secondary dropdown-toggle " 
-                  type="button" 
-                  id="dropdownMenu2" 
-                  data-bs-toggle="dropdown" 
-                  aria-expanded="false"
-                  >          
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                  <li><button class="dropdown-item" type="button">Profile</button></li>
-                  <li><button class="dropdown-item" type="button">Acessability</button></li>
-                  <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Login Out</a></li>
-                </ul>
-              </div>
-          </div>
-        </nav>
   <!-- tabs -->
     <div class="d-flex flex-column align-items-center">
       <ul class=" nav nav-tabs" id="myTab" role="tablist">
@@ -94,7 +94,9 @@
             aria-controls="home-tab-pane" 
             aria-selected="true"
             >
-            Grid
+            <span class="material-symbols-outlined">
+              apps
+              </span>
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -105,7 +107,9 @@
           aria-controls="profile-tab-pane" 
           aria-selected="false"
           >
-          List
+          <span class="material-symbols-outlined">
+            menu
+            </span>
         </button>
         </li>
       </ul>
@@ -132,16 +136,64 @@
     </div>
   <!-- Second tab-->
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="Point" tabindex="0">
-        <div class="d-flex justify-content-center row g-4 w-50 p-3">
+        <div class="d-flex row g-4 w-50 mt-0 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3">
+            <h5>The joyful hound of Baskerville</h5><span>06/22</span>
+          </div>
           <img src="https://www.akc.org/wp-content/uploads/2021/09/Finnish-Lapphund-shutterstock_1038964219.jpg"  alt="Puppy">
-          <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg" alt="sunset">
+          <b class="mt-0">213 likes</b>
+          <p class="mt-1">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5>One of the most awe-inspiring things =)</h5><span>07/22</span></div>
+            <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sunset-quotes-21-1586531574.jpg" alt="sunset">
+            <b class="mt-0">8,522k likes</b>
+            <p class="mt-1">"The end of this unique day"</p>
+        </div>
+            
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5>Design to insightly fly high</h5><span>08/22</span></div>  
           <img src="https://m.media-amazon.com/images/I/51qKiFtiWUL._AC_SL1000_.jpg" alt="Eagle">
+          <b class="mt-0">144k likes</b>
+          <p class="mt-1">"Or is it at your order that an eagle flies upward... Its eyes look far into the distance."</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5><i>"Ademloos"</i></h5><span>09/22</span></div>  
           <img src="https://www.27vakantiedagen.nl/wp-content/uploads/2021/09/sequoia-national-park-1250x488.jpg" alt="Sequoia">
+          <b class="mt-0">8,000M likes</b>
+          <p class="mt-1">The biggest, maybe the oldest organism on planet earth</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5>Gratitude</h5><span>10/22</span></div>  
           <img src="https://wp.en.aleteia.org/wp-content/uploads/sites/2/2017/10/web3-woman-smiling-sunshine-looking-gratitude-shutterstock.jpg" alt="Gratitude">
-          <img src="https://ivdnt.org/wp-content/uploads/2020/01/tukp.jpg" alt="Tulp">
-          <img src="https://t3.ftcdn.net/jpg/03/15/34/90/240_F_315349043_6ohfFyx37AFusCKZtGQtJR0jqUxhb25Y.jpg" alt="Landscape">
+          <b class="mt-0">8,000M likes</b>
+          <p class="mt-1">"Pause... and Reset"</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5><i>"Savoir fair"</i></h5><span class="float end">04/23</span></div>  
+          <img src="https://ivdnt.org/wp-content/uploads/2020/01/tukp.jpg" alt="Tulp" width="400" height="384">
+          <b class="mt-0">500 likes</b>
+          <p class="mt-1">'Take [the] lesson from the lilies of the field'</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5>Landscape</h5> <span>05/23</span></div>  
+          <img src="https://t3.ftcdn.net/jpg/03/15/34/90/240_F_315349043_6ohfFyx37AFusCKZtGQtJR0jqUxhb25Y.jpg" alt="Landscape" >
+          <b class="mt-0">453 likes</b>
+          <p class="mt-1">"The wilderness and the parched land will exult,
+            and the desert plain will be joyful and blossom as the saffron."</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5><i>"Smaklijk"</i></h5><span>05/23</span></div> 
           <img src="https://koken.vtm.be/sites/koken.vtm.be/files/recipe/image/frietjes.jpg" alt="frietjes(Frensh Fries)">
+          <b class="mt-0">1918 likes</b>
+          <p class="mt-1">Frietjes - "It's said that this dish was discovered by American soldiers in Belgium during World War I and, since the dominant language of southern Belgium is French, they dubbed the tasty potatoes “French” fries."</p>
+        </div>
+        <div class=" d-flex row g-4 w-50 mt-3 m-auto bg-light">
+          <div class="header d-flex justify-content-between p-3"><h5><i>Delicious</i></h5><span>08/23</span></div> 
           <img src="https://www.thespruceeats.com/thmb/U3tHMqoAqVs9SI4krDrflxnD2rU=/940x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/fluffy-waffles-recipe-995798-hero-03-1860790eaa1547d1beb256e7588cbed2.jpg" alt="fluffy-waffles-recipe">
+          <b class="mt-0">243 likes</b>
+          <p class="mt-1">Regular waffle batter shouldn't be runny like water or oil, but not as thick as dough, either. When poured it should move slowly, but readily, with a consistency like that of honey.</p>
+        </div>
         </div>
         </div>
       </div>
@@ -150,8 +202,8 @@
         <!-- first Pic --> 
   </div>
       <!---font awesome-->
-      <script src="https://kit.fontawesome.com/a5845b3a70.js" crossorigin="anonymous"></script>
-       <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://kit.fontawesome.com/a5845b3a70.js" crossorigin="anonymous"></script>  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>   
 </body>
